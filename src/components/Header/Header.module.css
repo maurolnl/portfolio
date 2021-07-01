@@ -4,19 +4,24 @@
   stroke-dashoffset: 1494;
 }
 
+.header {
+  padding: 2rem 0;
+}
+
 .nav_bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  line-height: 4vh;
   font-size: 1.5rem;
   z-index: 2;
 }
 
-.nav_bar_container {
+.container {
   width: 55rem;
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 1.5rem;
+  line-height: 4vh;
 }
 
 .nav_bar_item_container {
@@ -33,11 +38,18 @@
 .logo_container {
   width:3.75rem;
   height:4.65rem;
+  cursor: pointer;
 }
 
 .nav_bar_item:hover {
   border-color:#5f9ea0;
   transition: all .8s;
+}
+
+@media screen and (max-width: 445px) {
+  .logo_container {
+    display: none
+  } 
 }
 
 @media screen and (min-width: 576px) {
