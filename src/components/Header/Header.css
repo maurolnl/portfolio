@@ -1,0 +1,53 @@
+.logo path {
+  animation: logo_anim 3s ease forwards;
+  stroke-dasharray: 1494;
+  stroke-dashoffset: 1494;
+}
+
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 4vh;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+.nav_bar_container {
+  width: 55rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.nav_bar_item_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_bar_item {
+  margin-left: 1em;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+}
+
+.logo_container {
+  width:3.75rem;
+  height:4.65rem;
+}
+
+.nav_bar_item:hover {
+  border-color:#5f9ea0;
+  transition: all .8s;
+}
+
+@media screen and (min-width: 576px) {
+  .nav_bar_item {
+    margin-left: 2em;
+  }
+}
+
+@keyframes logo_anim {
+ to {
+   stroke-dashoffset: 0;
+ } 
+}
