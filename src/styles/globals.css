@@ -32,3 +32,6 @@ a::selection {
 * {
   box-sizing: border-box;
 }
+br::selection {
+  background: #5f9ea0;
+}

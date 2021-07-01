@@ -26,17 +26,19 @@ const Hero = () => {
             strokeLinejoin="round"
           />
         </svg>
-        
       </div>
       <div className={styles.hero_content}>
-        <div className={styles.hero_content}>
-          <h1 className={styles.hero_title}>Mauro Leonel Quiroga</h1>
-        </div>
-        <div className={styles.hero_social_media_container}>
-          <p className={styles.hero_description}>
-            Hey, I&apos;m a passionate full-stack Web Developer based on San
-            Luis, Argentina{" "}
-          </p>
+        <h1 className={styles.hero_title_hello}>
+          Hello, World! <br/>
+          I&apos;m,
+          <strong className={styles.hero_title}> Mauro Leonel Quiroga</strong>
+          .
+        </h1>
+        <p className={styles.hero_description}>
+          A passionate Full Stack Web Developer, <br/> based on San
+          Luis, Argentina.
+        </p>
+      </div>
           {/*}<a
             href="https://github.com/maurolnl"
             target="_blank"
@@ -58,9 +60,6 @@ const Hero = () => {
           >
             <SiTwitter size={24} color={"#db6899"} />{" "}
           </a>*/}
-        </div>
-
-      </div>
     </section>
   );
 };

@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero/Hero'
+import Divider from '../components/Divider/Divider'
 
 export default function Home() {
   
@@ -17,6 +18,9 @@ export default function Home() {
         <main>
           <Hero/>  
         </main>
+
+        <Divider/>
+
         <section id="hero-section" className="hero_section">
           vos
         </section>
