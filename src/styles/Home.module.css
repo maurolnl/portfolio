@@ -1,4 +1,14 @@
+.global_container--sm{
+  width: 45rem;
+}
 
+.global_container {
+  width: 55rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  line-height: 4vh;
+}
 
 .skills_section {
   height:1000px;
