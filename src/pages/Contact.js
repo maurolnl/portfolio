@@ -1,11 +1,10 @@
 import Layout from "../components/Layout"
+import ContactMe from '../components/Contact/Contact'
 
 const Contact = ({children}) => {
   return (
     <Layout>
-      <h1>
-        Contact...
-      </h1>
+      <ContactMe /> 
     </Layout>
 
   )
