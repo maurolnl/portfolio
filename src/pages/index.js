@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero/Hero'
 import Divider from '../components/Divider/Divider'
+import Main from '../components/Main/Main'
 
 export default function Home() {
   
@@ -15,25 +15,9 @@ export default function Home() {
         <link rel="icon" href="favicon.ico" />
       </Head>
       <Layout>
-        <main>
-          <Hero/>  
-        </main>
-
+        <Hero/>  
         <Divider/>
-
-        <section id="hero-section" className="hero_section">
-          vos
-        </section>
-        <section id="projects-section" className="projects_section">
-          je
-        </section>
-        <section id="skills-section" className={styles.skills_section}>
-          ja
-        </section>
-
-        <footer className={styles.footer}>
-        </footer>
-
+        <Main /> 
       </Layout> 
       
     </>

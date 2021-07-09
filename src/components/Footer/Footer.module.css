@@ -1,0 +1,29 @@
+.footer {
+  background-color: black;
+  padding:.5vh 0;
+}
+
+.container_footer {
+  display: flex;
+  justify-content: space-between;
+  width:20rem;
+}
+
+.a {
+  color: #5f9ea0;
+  border-bottom: 3px solid transparent;
+  font-weight: 500;
+}
+
+.a:hover {
+  border-color:#5f9ea0;
+  transition: all .8s;
+}
+
+.rightA {
+  padding-left: 2rem;
+}
+
+.leftA {
+  padding-right: 2rem;
+}

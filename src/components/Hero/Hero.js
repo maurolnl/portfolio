@@ -1,5 +1,3 @@
-import { SiLinkedin, SiTwitter } from "react-icons/si";
-import { VscGithub } from "react-icons/vsc";
 import styles from './Hero.module.css'
 import { useRef } from 'react'
 
@@ -39,27 +37,6 @@ const Hero = () => {
           Luis, Argentina.
         </p>
       </div>
-          {/*}<a
-            href="https://github.com/maurolnl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <VscGithub color={"#db6899"} size={24} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/maurolnl/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiLinkedin size={24} color={"#db6899"} />{" "}
-          </a>
-          <a
-            href="https://twitter.com/maurolquiroga"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiTwitter size={24} color={"#db6899"} />{" "}
-          </a>*/}
     </section>
   );
 };

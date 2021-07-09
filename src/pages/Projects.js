@@ -1,11 +1,10 @@
 import Layout from "../components/Layout"
+import Project from '../components/Project/Project'
 
 const Projects = ({children}) => {
   return (
     <Layout>
-      <h1>
-        Projects
-      </h1>
+     <Project /> 
     </Layout>
 
   )

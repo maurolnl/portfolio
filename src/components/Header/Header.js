@@ -1,10 +1,11 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
+import global_styles from '../../styles/Home.module.css'
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.container}>
+      <div className={global_styles.container}>
         <nav className={styles.nav_bar}>
           <div className={styles.logo_container}>
             <Link href="/">

@@ -34,11 +34,12 @@
   margin-top: 1.5rem;
   margin-bottom: 1vh;
   text-align: left;
+  line-height: 5vh;
 }
 
 .hero_description {
   padding-top: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   margin-top: 0;
   text-align: left;
 }

@@ -1,8 +1,23 @@
-.global_container--sm{
+.container_sm{
   width: 45rem;
 }
 
-.global_container {
+.paragraph {
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  margin-top: 0;
+  text-align: left;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 2.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1vh;
+  text-align: left;
+}
+
+.container{
   width: 55rem;
   max-width: 100%;
   margin: 0 auto;
