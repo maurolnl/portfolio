@@ -29,3 +29,53 @@
   height:1000px;
 }
 
+.button_confirm {
+  padding: .5rem;
+  width: 9rem;
+  height: 2.6rem;
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  background-color: var(--color-secondaryAccent);
+  border: 1px solid var(--color-secondary);
+  border-radius:3px;
+  cursor:pointer;
+}
+
+.contact_label {
+  font-size: 1.5rem;
+}
+
+.alert_label_success {
+  color: var(--color-secondary);
+}
+
+.alert_label_error {
+  color: var(--color-primaryAccent);
+}
+
+.alert_label {
+  animation: fadeIn .7s;
+  font-size:1.3rem;
+  color: #222;
+}
+
+.inside_link {
+  border-bottom: 3px solid var(--color-secondary);
+  cursor: pointer;
+}
+
+.inside_link:hover {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  transition: all .5s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.button_confirm:hover {
+  background-color: var(--color-primaryAccent);
+  transition: all .6s;
+}
