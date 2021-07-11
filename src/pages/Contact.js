@@ -1,5 +1,5 @@
 import Layout from "../components/Layout"
-import ContactMe from '../components/Contact/Contact'
+import ContactMe from '../components/Contact/ContactMe'
 
 const Contact = ({children}) => {
   return (
