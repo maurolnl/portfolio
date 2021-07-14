@@ -54,6 +54,8 @@ textarea::selection {
 }
 
 input {
+  font-family:monospace;
+  font-weight: 400;
   display: block;
   width: 100%;
   margin: .5rem 0;
