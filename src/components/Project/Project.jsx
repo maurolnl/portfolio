@@ -8,33 +8,36 @@ const Project = () => {
     {
       id:1,
       name: "Yet another todo list app",
-      descritpion: "Blablblablablablablalabl lBlablblablablablablalabl hola v v hola v lballbalabbala",
+      description: "Blablblablablablablalabl lBlablblablablablablalabl hola v v hola v lballbalabbala",
       problem:"some problem"
     },
     {
       id:2,
       name: "Another corona tracker",
-      descritpion: "Blablblablablablablalabl lballbalabbala",
+      description: "Blablblablablablablalabl lballbalabbala",
       problem:""
     },
     {
       id:3,
       name: "Another project",
-      descritpion: "Blablblablablablablalabl lballbalabbala",
+      description: "Blablblablablablablalabl lballbalabbala",
       problem:"another problem"
     }
   ] 
 
   return(
     <section className={`${styles.container_projects} ${global_styles.container}`}>
-      <h1>Some Learning Projects</h1>
+      <h1 className={global_styles.title}>Some Learning Projects</h1>
       {
         projects.map(project => {
           return(
-            <div key={project.id} className={global_styles.gridTwoColumn}>
-              <Image src={todoListPic} alt ="Todo"></Image>
+            <div key={project.id} className={global_styles.gridRows}>
+                <Image src={todoListPic} alt ="Todo" className={styles.projectImage}></Image>
+              <h1 className={styles.articleTitle}>
+                {project.name}
+              </h1>
               <p>
-                {project.descritpion}
+                {project.description}
                 <br/>
                 {project.problem}
               </p>

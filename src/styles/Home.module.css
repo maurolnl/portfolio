@@ -25,11 +25,10 @@
   width: 45rem;
 }
 
-.gridTwoColumn {
- display: grid;
- gap: 1rem;
- grid-auto-rows: 15rem;
- grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); 
+.gridRows {
+ display: flex;
+ flex-direction: column;
+ padding-top: 4rem;
 }
 
 .skills_section {
