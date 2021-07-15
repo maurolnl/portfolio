@@ -1,8 +1,14 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
 import global_styles from '../../styles/Home.module.css'
+import { useRef } from "react";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const projectsRef = useRef('');
+  const contactRef = useRef('');
+  const router = useRouter();
+
   return (
     <header className={styles.header}>
       <div className={global_styles.container}>
@@ -27,13 +33,13 @@ const Header = () => {
             </Link>
           </div>
           <div className={styles.nav_bar_item_container}>
-            <div className={styles.nav_bar_item}>
+            <div className={router.pathname == "/Projects" ? `${styles.nav_bar_item_active}` : `${styles.nav_bar_item}`}>
               <Link href="/Projects" className={styles.link}>
-                Projects
+                <a>Projects</a>
               </Link>
             </div>
-            <div className={styles.nav_bar_item}>
-              <Link href="/Contact">Contact</Link>
+            <div className={router.pathname == "/Contact" ? `${styles.nav_bar_item_active}` : `${styles.nav_bar_item}`}>
+              <Link href="/Contact"><a>Contact</a></Link>
             </div>
             <div className={styles.nav_bar_item}>
               <a

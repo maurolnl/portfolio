@@ -36,6 +36,12 @@
   border-bottom: 3px solid transparent;
 }
 
+.nav_bar_item_active {
+  margin-left: 1em;
+  text-align: center;
+  border-bottom: 3px solid var(--color-secondary);
+}
+
 .logo_container {
   width:3.75rem;
   height:4.65rem;
@@ -55,6 +61,9 @@
 
 @media screen and (min-width: 576px) {
   .nav_bar_item {
+    margin-left: 2em;
+  }
+  .nav_bar_item_active {
     margin-left: 2em;
   }
 }
