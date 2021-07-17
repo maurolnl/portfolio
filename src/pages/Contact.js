@@ -5,6 +5,7 @@ const Contact = ({children}) => {
   return (
     <Layout>
       <ContactMe /> 
+      {children}
     </Layout>
 
   )

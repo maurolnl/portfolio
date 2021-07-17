@@ -5,6 +5,7 @@ const Projects = ({children}) => {
   return (
     <Layout>
      <Project /> 
+     {children}
     </Layout>
 
   )
