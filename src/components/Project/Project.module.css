@@ -16,3 +16,14 @@
   margin: 0;
   padding-top: 1rem;
 }
+
+.descriptionAccent{
+  color: var(--color-primaryAccent);
+  display: contents;
+  margin: 0;
+  font-weight: 600;
+}
+
+.descriptionAccent::selection{
+  color: var(--color-primaryAccent);
+}

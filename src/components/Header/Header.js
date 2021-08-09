@@ -42,13 +42,9 @@ const Header = () => {
               <Link href="/Contact"><a>Contact</a></Link>
             </div>
             <div className={styles.nav_bar_item}>
-              <a
-                href="https://www.linkedin.com/in/maurolnl/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </a>
+              <Link href="/cv/cv_MauroQuiroga.pdf" >
+                <a target="_blank" rel="nooper noreferrer">Resume</a>
+              </Link>  
             </div>
           </div>
         </nav>

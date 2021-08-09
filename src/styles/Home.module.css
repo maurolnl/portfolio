@@ -85,3 +85,24 @@
   background-color: var(--color-primaryAccent);
   transition: all .6s;
 }
+
+.link {
+  border-bottom: 3px solid var(--color-secondary);
+}
+
+.link:hover {
+  color: white;
+  background-color: var(--color-secondary);
+  transition: all .4s;
+}
+
+.linkFooter {
+  color: var(--color-secondary);
+  border-bottom: 3px solid transparent;
+  font-weight: 500;
+}
+
+.linkFooter:hover {
+  border-color:var(--color-secondary);
+  transition: all .8s;
+}

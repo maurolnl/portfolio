@@ -13,17 +13,6 @@
   width:20rem;
 }
 
-.a {
-  color: #5f9ea0;
-  border-bottom: 3px solid transparent;
-  font-weight: 500;
-}
-
-.a:hover {
-  border-color:#5f9ea0;
-  transition: all .8s;
-}
-
 .rightA {
   padding-left: 2rem;
 }

@@ -9,7 +9,7 @@ const Footer = () => {
           href="https://github.com/maurolnl"
           target="_blank"
           rel="noopener noreferrer"
-          className={`${styles.a}`}
+          className={`${global_styles.linkFooter}`}
         >
         Github
         </a>
@@ -17,7 +17,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/maurolnl/"
           target="_blank"
           rel="noopener noreferrer"
-          className={styles.a}
+          className={global_styles.linkFooter}
         >
         LinkedIn
         </a>
@@ -25,7 +25,7 @@ const Footer = () => {
           href="https://twitter.com/maurolquiroga"
           target="_blank"
           rel="noopener noreferrer"
-          className={`${styles.a} `}
+          className={`${global_styles.linkFooter} `}
         >
         Twitter
         </a>
