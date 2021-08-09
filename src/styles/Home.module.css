@@ -106,3 +106,14 @@
   border-color:var(--color-secondary);
   transition: all .8s;
 }
+
+.wordAccent{
+  color: var(--color-primaryAccent);
+  display: contents;
+  margin: 0;
+  font-weight: 600;
+}
+
+.wordAccent::selection{
+  color: var(--color-primaryAccent);
+}

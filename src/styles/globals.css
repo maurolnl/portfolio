@@ -13,6 +13,7 @@ body {
   --color-primary: #fff0f5;
   --color-secondary:#5f9ea0;
   --color-primaryAccent: #ff3e7e;
+  --color-third-pink: #c71585;
   --color-secondaryAccent: #ff8db3;
 }
 
@@ -95,5 +96,9 @@ label::selection {
 }
 
 br::selection {
+  background: var(--color-secondary) 
+}
+
+strong::selection{
   background: var(--color-secondary) 
 }

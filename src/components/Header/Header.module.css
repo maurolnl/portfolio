@@ -53,8 +53,23 @@
   transition: all .8s;
 }
 
+.resume_container {
+  width: 1.5rem;
+  height: 2.3rem;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 445px) {
-  .logo_container {
+  .resume {
+    display: none
+  }
+  .nav_bar_item{
+    margin-left: .8em;
+  }
+}
+
+@media screen and (min-width: 445px) {
+  .resume_container {
     display: none
   } 
 }

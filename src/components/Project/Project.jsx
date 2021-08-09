@@ -32,7 +32,7 @@ const Project = () => {
               </a>{" "}
               which is a very good alternative to react router. One of my main
               problems was the{" "}
-              <p className={styles.descriptionAccent}>data input</p>, in a first
+              <span className={styles.descriptionAccent}>data input</span>, in a first
               approach I found an API called{" "}
               <a
                 href="https://covid19api.com/"
@@ -56,8 +56,8 @@ const Project = () => {
               in this case I had all the information that I needed (and much
               much more) but the problem was that this data was in raw format so
               I had to fetch this data{" "}
-              <p className={styles.descriptionAccent}>carefully</p> to not ruin
-              the <p className={styles.descriptionAccent}>performance</p>.{" Go to "}
+              <span className={styles.descriptionAccent}>carefully</span> to not ruin
+              the <span className={styles.descriptionAccent}>performance</span>.{" Go to "}
               <a
                 href="https://github.com/molefrog/wouter#readme"
                 target="_blank"
@@ -81,10 +81,10 @@ const Project = () => {
             <h1 className={styles.articleTitle}>Yet another TODO list</h1>
             <p>
               Well, this project is the prove that you{" "}
-              <p className={styles.descriptionAccent}>
+              <span className={styles.descriptionAccent}>
                 don&apos;t need to build huge and complex stuff to learn the
                 basics of technologies
-              </p>
+              </span>
               , with this todo list I was able to learn the basics of react in a
               very first iteration of it, then I took it back and decided to re
               do it in{" "}
@@ -111,9 +111,9 @@ const Project = () => {
               more into the project I realized how worth was to implement it in
               typescript, at the end my development performance increased a lot
               because of{" "}
-              <p className={styles.descriptionAccent}>
+              <span className={styles.descriptionAccent}>
                 all the benefits and how convinent are the types
-              </p>
+              </span>
               .{" Go to "}
               <a
                 href="https://github.com/molefrog/wouter#readme"

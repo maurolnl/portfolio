@@ -1,11 +1,9 @@
-import styles from './Hero.module.css'
-import { useRef } from 'react'
+import styles from "./Hero.module.css";
+import global_styles from "../../styles/Home.module.css";
+import { useRef } from "react";
 
 const Hero = () => {
- const leng = useRef(null)
-  if (leng.current) {
-    console.log(leng.current.getTotalLength());
-  }
+  const leng = useRef(null);
   return (
     <section className={styles.landing_section}>
       <div className={styles.hero_container}>
@@ -27,15 +25,16 @@ const Hero = () => {
       </div>
       <div className={styles.hero_content}>
         <h1 className={styles.hero_title_hello}>
-          Hello, World! <br/>
+          Hello, World! <br />
           I&apos;m,
-          <strong className={styles.hero_title}> Mauro Leonel Quiroga</strong>
-          .
+          <strong className={styles.hero_title}> Mauro Leonel Quiroga</strong>.
         </h1>
         <p className={styles.hero_description}>
-          A passionate Full Stack Web Developer, <br/> based on San
-          Luis, Argentina.
+          A passionate Web Developer <br /> working mostly on{" "}
+          <strong className={global_styles.wordAccent}>Front End</strong>.
         </p>
+       
+ 
       </div>
     </section>
   );
