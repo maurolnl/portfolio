@@ -20,7 +20,7 @@ const Project = () => {
             ></Image>
             <h1 className={styles.articleTitle}>Corona Virus Tracker</h1>
             <p>
-              This project was built to learn about pagination in this case with
+              This project was built to learn about pagination, in this case with
               a very light weight library named{" "}
               <a
                 href="https://github.com/molefrog/wouter#readme"
@@ -43,7 +43,7 @@ const Project = () => {
                 covid19api
               </a>{" "}
               which had an acceptable documentation but it lacked information
-              about the vaccinations so with this in mind I searched the data
+              about the vaccinations. So with this in mind, I searched the data
               input of the google covid information tool and I found{" "}
               <a
                 href="https://ourworldindata.org/"
@@ -52,12 +52,12 @@ const Project = () => {
                 className={`${global_styles.link} `}
               >
                 our world in data
-              </a>{" "}
+              </a>{", "}
               in this case I had all the information that I needed (and much
-              much more) but the problem was that this data was in raw format so
+              much more) but the problem was that this data was in raw format, so
               I had to fetch this data{" "}
               <span className={styles.descriptionAccent}>carefully</span> to not ruin
-              the <span className={styles.descriptionAccent}>performance</span>.{" Go to "}
+              the <span className={styles.descriptionAccent}>performance</span>.{" Visit the "}
               <a
                 href="https://github.com/molefrog/wouter#readme"
                 target="_blank"
@@ -105,16 +105,16 @@ const Project = () => {
               >
                 bootstrap
               </a>{" "}
-              for better styling, again for learning purpose. I ended up
-              struggling a bit at the beggining because all of the types stuff
+              for better styling, again for learning purposes. I ended up
+              struggling a bit at the beggining, because all of the types stuff
               and my development performance decreased a lot, but when I was
               more into the project I realized how worth was to implement it in
-              typescript, at the end my development performance increased a lot
+              typescript. At the end my development performance increased a lot
               because of{" "}
               <span className={styles.descriptionAccent}>
                 all the benefits and how convinent are the types
               </span>
-              .{" Go to "}
+              .{" Visit the "}
               <a
                 href="https://github.com/molefrog/wouter#readme"
                 target="_blank"
