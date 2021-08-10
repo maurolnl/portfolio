@@ -72,22 +72,18 @@
 
 
 .hero_description::selection {
-  color: white;
-  background: #5f9ea0;
+  color: var(--color-neutral-white);
+  background: var(--color-secondary);
 }
 
 .hero_title_hello::selection {
-  color: white;
-  background: #5f9ea0;
+  color: var(--color-neutral-white);
+  background: var(--color-secondary);
 }
 
 .hero_title::selection {
-  color: #c71585;
-  background: #5f9ea0;
-}
-
-.section {
-  border: 5px solid #25092c;
+  color: var(--color-primaryAccent);
+  background: var(--color-secondary);
 }
 
 @media all and (max-width:760px) {

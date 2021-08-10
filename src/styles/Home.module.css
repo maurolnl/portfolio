@@ -62,7 +62,7 @@
 .alert_label {
   animation: fadeIn .7s;
   font-size:1.3rem;
-  color: #222;
+  color: var(--color-neutral-black);
 }
 
 .inside_link {
@@ -91,7 +91,7 @@
 }
 
 .link:hover {
-  color: white;
+  color: var(--color-neutral-white);
   background-color: var(--color-secondary);
   transition: all .4s;
 }

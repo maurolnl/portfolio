@@ -15,6 +15,8 @@ body {
   --color-primaryAccent: #ff3e7e;
   --color-third-pink: #c71585;
   --color-secondaryAccent: #ff8db3;
+  --color-neutral-black: black;
+  --color-neutral-white: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -35,7 +37,7 @@ a {
 }
 
 a::selection {
-  color: white;
+  color: var(--color-neutral-white);
   background: var(--color-secondary) 
 }
 
@@ -50,7 +52,7 @@ textarea {
 }
 
 textarea::selection {
-  color: white;
+  color: var(--color-neutral-white);
   background: var(--color-secondary) 
 }
 
@@ -67,27 +69,27 @@ input {
 }
 
 input::selection {
-  color: white;
+  color: var(--color-neutral-white);
   background: var(--color-secondary) 
 }
 
 button::selection {
-  color: white;
+  color: var(--color-neutral-white);
   background: var(--color-secondary) 
 }
 
 h1::selection{
-  color: white;
+  color: var(--color-neutral-white);
   background: var(--color-secondary) 
 }
 
 p::selection{
-  color: white;
+  color: var(--color-neutral-white);
   background: var(--color-secondary) 
 }
 
 label::selection {
-  color: white;
+  color: var(--color-neutral-white);
   background: var(--color-secondary) 
 }
 

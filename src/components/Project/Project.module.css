@@ -26,4 +26,5 @@
 
 .descriptionAccent::selection{
   color: var(--color-primaryAccent);
+  background-color: var(--color-secondary);
 }
