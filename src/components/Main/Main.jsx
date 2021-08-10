@@ -1,25 +1,34 @@
-import global_styles from '../../styles/Home.module.css'
-import styles from './Main.module.css'
+import global_styles from "../../styles/Home.module.css";
+import styles from "./Main.module.css";
 
 const Main = () => {
   return (
     <main className={`${styles.container_sm} ${global_styles.container}`}>
-        <h1 className={global_styles.title}>
-          About Me
-        </h1>
-        <p className={global_styles.paragraph}>
-          Un apasionado por el desarrollo de software
-          buscando aprender y mejorar constantemente. Con
-          experiencia desarrollando aplicaciones web tanto en
-          el Frontend como en el Backend, en busca de un
-          equipo con el cual crecer en conjunto y seguir
-          avanzando mi carrera profesional.
-        </p>
-        <p className={global_styles.paragraph}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
+      <h1 className={global_styles.title}>About Me</h1>
+      <p className={global_styles.paragraph}>
+        I&apos;m a passionate about software development, looking to learn and
+        improve constantly. I have experience working on{" "}
+        <a
+          href="https://www.raona.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${global_styles.link} `}
+        >
+          Raona
+        </a>
+        {", "}
+        developing web applications both on Frontend in React and on the Backend
+        with C#. I&apos;m now searching for a team to grow with and continue
+        advancing my professional career.
+      </p>
+      <p className={global_styles.paragraph}>
+        On my personal side, I really like photography and I tend to go for a
+        walks on my free time and try to take advantage of it and take some
+        photos. Besides that I love music and I actually play the guitar, I
+        honestly can&apos;t code without music playing in the background.
+      </p>
     </main>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

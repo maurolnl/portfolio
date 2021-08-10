@@ -1,5 +1,12 @@
 .paragraph {
   padding-top: 2rem;
+  font-size: 1.6rem;
+  margin-top: 0;
+  text-align: left;
+}
+
+.paragraph_sm {
+  padding-top: 2rem;
   font-size: 1.3rem;
   margin-top: 0;
   text-align: left;
@@ -22,7 +29,7 @@
 }
 
 .container_sm{
-  width: 45rem;
+  width: 43rem;
 }
 
 .gridRows {
@@ -100,6 +107,7 @@
   color: var(--color-secondary);
   border-bottom: 3px solid transparent;
   font-weight: 500;
+  font-size:1.1rem;
 }
 
 .linkFooter:hover {
@@ -111,7 +119,7 @@
   color: var(--color-primaryAccent);
   display: contents;
   margin: 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .wordAccent::selection{

@@ -6,9 +6,8 @@ const Hero = () => {
   const leng = useRef(null);
   return (
     <section className={styles.landing_section}>
-      <div className={styles.hero_container}>
+      <div className={`${styles.hero_container} ${styles.logo}`}>
         <svg
-          className={styles.logo}
           viewBox="0 0 199 245"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +29,7 @@ const Hero = () => {
           <strong className={styles.hero_title}> Mauro Leonel Quiroga</strong>.
         </h1>
         <p className={styles.hero_description}>
-          A passionate Web Developer <br /> working mostly on{" "}
+          A passionate Web Developer, <br /> working mostly on{" "}
           <strong className={global_styles.wordAccent}>Front End</strong>.
         </p>
        

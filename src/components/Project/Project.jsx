@@ -19,9 +19,9 @@ const Project = () => {
               className={styles.projectImage}
             ></Image>
             <h1 className={styles.articleTitle}>Corona Virus Tracker</h1>
-            <p>
-              This project was built to learn about pagination, in this case with
-              a very light weight library named{" "}
+            <p className={global_styles.paragraph_sm}>
+              This project was built to learn about pagination, in this case
+              with a very light weight library named{" "}
               <a
                 href="https://github.com/molefrog/wouter#readme"
                 target="_blank"
@@ -30,10 +30,18 @@ const Project = () => {
               >
                 wouter
               </a>{" "}
-              which is a very good alternative to react router. One of my main
-              problems was the{" "}
-              <span className={styles.descriptionAccent}>data input</span>, in a first
-              approach I found an API called{" "}
+              which is a very good alternative to{" "}
+              <a
+                href="https://reactrouter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${global_styles.link} `}
+              >
+                react router
+              </a>
+              {". "}One of my main problems was the{" "}
+              <span className={styles.descriptionAccent}>data input</span>, in a
+              first approach I found an API called{" "}
               <a
                 href="https://covid19api.com/"
                 target="_blank"
@@ -42,7 +50,7 @@ const Project = () => {
               >
                 covid19api
               </a>{" "}
-              which had an acceptable documentation but it lacked information
+              which had an acceptable documentation, but it lacked information
               about the vaccinations. So with this in mind, I searched the data
               input of the google covid information tool and I found{" "}
               <a
@@ -52,24 +60,32 @@ const Project = () => {
                 className={`${global_styles.link} `}
               >
                 our world in data
-              </a>{", "}
+              </a>
+              {", "}
               in this case I had all the information that I needed (and much
-              much more) but the problem was that this data was in raw format, so
-              I had to fetch this data{" "}
-              <span className={styles.descriptionAccent}>carefully</span> to not ruin
-              the <span className={styles.descriptionAccent}>performance</span>.{" Visit the "}
+              much more), but the problem was that this data was in raw format,
+              so I had to fetch this data{" "}
+              <span className={styles.descriptionAccent}>carefully</span> to not
+              ruin the{" "}
+              <span className={styles.descriptionAccent}>performance</span> of the app.
+              {" Visit the "}
               <a
                 href="https://github.com/molefrog/wouter#readme"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${global_styles.link} `}
-              >site</a>{" or just view the code "}
+              >
+                site
+              </a>
+              {" or just view the code "}
               <a
                 href="https://github.com/molefrog/wouter#readme"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${global_styles.link} `}
-              >here</a>
+              >
+                here
+              </a>{"."}
             </p>
           </div>
           <div className={global_styles.gridRows}>
@@ -79,7 +95,7 @@ const Project = () => {
               className={styles.projectImage}
             ></Image>
             <h1 className={styles.articleTitle}>Yet another TODO list</h1>
-            <p>
+            <p className={global_styles.paragraph_sm}>
               Well, this project is the prove that you{" "}
               <span className={styles.descriptionAccent}>
                 don&apos;t need to build huge and complex stuff to learn the
@@ -94,7 +110,7 @@ const Project = () => {
                 rel="noopener noreferrer"
                 className={`${global_styles.link} `}
               >
-                typescript
+                Typescript
               </a>{" "}
               and add{" "}
               <a
@@ -103,7 +119,7 @@ const Project = () => {
                 rel="noopener noreferrer"
                 className={`${global_styles.link} `}
               >
-                bootstrap
+                Bootstrap
               </a>{" "}
               for better styling, again for learning purposes. I ended up
               struggling a bit at the beggining, because all of the types stuff
@@ -120,13 +136,18 @@ const Project = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${global_styles.link} `}
-              >site</a>{" or just view the code "}
+              >
+                site
+              </a>
+              {" or just view the code "}
               <a
                 href="https://github.com/molefrog/wouter#readme"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${global_styles.link} `}
-              >here</a>
+              >
+                here
+              </a>{"."}
             </p>
           </div>
         </>
