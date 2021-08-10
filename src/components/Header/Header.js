@@ -5,8 +5,6 @@ import { useRef } from "react";
 import { useRouter } from "next/router";
 
 const Header = () => {
-  const projectsRef = useRef("");
-  const contactRef = useRef("");
   const router = useRouter();
 
   return (

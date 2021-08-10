@@ -6,7 +6,7 @@ const Hero = () => {
   const leng = useRef(null);
   return (
     <section className={styles.landing_section}>
-      <div className={`${styles.hero_container} ${styles.logo}`}>
+      <div className={styles.logo}>
         <svg
           viewBox="0 0 199 245"
           fill="none"
