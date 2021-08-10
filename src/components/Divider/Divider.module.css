@@ -1,7 +1,7 @@
 .divider {
   width: 7rem;
   height: .4rem;
-  background: #5f9ea0;
+  background: var(--color-secondary);
   border-radius: 7px;
   border:0;
   transition: all 1s;
