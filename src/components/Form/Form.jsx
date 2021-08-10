@@ -13,7 +13,7 @@ const Form = (props) => {
     loading
   } = props
   return (
-    <form className={styles.contact_form} onSubmit={handleSubmit}>
+    <form className={styles.contact_form} onSubmit={handleSubmit} autoComplete="off">
       <p>
         <label className={global_styles.contact_label}>
           Name:
