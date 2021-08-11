@@ -28,6 +28,8 @@
 .nav_bar_item_container {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  align-content: center;
 }
 
 .nav_bar_item {
@@ -57,6 +59,12 @@
   width: 1.5rem;
   height: 2.3rem;
   cursor: pointer;
+  border: none;
+}
+
+.resume_container:hover svg path{
+  stroke: var(--color-secondary);
+  stroke-width: 5px;
 }
 
 @media screen and (max-width: 445px) {
@@ -66,12 +74,31 @@
   .nav_bar_item{
     margin-left: .8em;
   }
+  .nav_bar{
+    justify-content: flex-end;
+  }
+  .logo_container{
+    width:2.3rem;
+    height:3.4rem;
+    cursor: pointer;
+    margin-right: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 446px) {
   .resume_container {
     display: none
   } 
+}
+
+@media screen and (max-width: 360px) {
+  .nav_bar_item{
+    font-size: .85em;
+  }
+  .resume_container{
+    width: 1.3rem;
+    height: 2rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -81,6 +108,10 @@
   .nav_bar_item_active {
     margin-left: 2em;
   }
+}
+
+@media screen and (max-width: 768px){
+
 }
 
 @keyframes logo_anim {
