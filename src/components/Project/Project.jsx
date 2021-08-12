@@ -70,7 +70,7 @@ const Project = () => {
               <span className={styles.descriptionAccent}>performance</span>.
               {" Visit the "}
               <a
-                href="https://github.com/molefrog/wouter#readme"
+                href="https://covid.maurolquiroga.site/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${global_styles.link} `}
@@ -79,7 +79,7 @@ const Project = () => {
               </a>
               {" or just view the code "}
               <a
-                href="https://github.com/molefrog/wouter#readme"
+                href="https://github.com/maurolnl/corona-tracker"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${global_styles.link} `}
@@ -132,7 +132,7 @@ const Project = () => {
               </span>
               .{" Visit the "}
               <a
-                href="https://github.com/molefrog/wouter#readme"
+                href="https://tasks.maurolquiroga.site/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${global_styles.link} `}
@@ -141,7 +141,7 @@ const Project = () => {
               </a>
               {" or just view the code "}
               <a
-                href="https://github.com/molefrog/wouter#readme"
+                href="https://github.com/maurolnl/react-tasks"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${global_styles.link} `}
