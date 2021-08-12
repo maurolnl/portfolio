@@ -66,8 +66,8 @@ const Project = () => {
               much more), but the problem was that this data was in raw format,
               so I had to fetch this data{" "}
               <span className={styles.descriptionAccent}>carefully</span> to not
-              ruin the{" "}
-              <span className={styles.descriptionAccent}>performance</span> of the app.
+              ruin the app{" "}
+              <span className={styles.descriptionAccent}>performance</span>.
               {" Visit the "}
               <a
                 href="https://github.com/molefrog/wouter#readme"
@@ -128,7 +128,7 @@ const Project = () => {
               typescript. At the end my development performance increased a lot
               because of{" "}
               <span className={styles.descriptionAccent}>
-                all the benefits and how convinent are the types
+                all the benefits and how convenient are the types
               </span>
               .{" Visit the "}
               <a

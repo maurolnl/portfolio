@@ -7,7 +7,7 @@ const Main = () => {
       <h1 className={global_styles.title}>About Me</h1>
       <p className={global_styles.paragraph}>
         I&apos;m a passionate about software development, looking to learn and
-        improve constantly. I have experience working on{" "}
+        improve constantly. I have experience working at{" "}
         <a
           href="https://www.raona.com/"
           target="_blank"
