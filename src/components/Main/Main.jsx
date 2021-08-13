@@ -23,7 +23,7 @@ const Main = () => {
       </p>
       <p className={global_styles.paragraph}>
         On my personal side, I really like photography and I tend to go for a
-        walks on my free time and try to take advantage of it and take some
+        walks on my free time trying to take advantage of it to take some
         photos. Besides that I love music and I actually play the guitar, I
         honestly can&apos;t code without music playing in the background.
       </p>
