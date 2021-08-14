@@ -23,6 +23,7 @@ const Form = (props) => {
             required="required"
             value={newName}
             name="Name"
+            placeholder="Your Name..."
           ></input>
         </label>
       </p>
@@ -35,6 +36,7 @@ const Form = (props) => {
             required="required"
             value={newEmail}
             name="Email"
+            placeholder="Your Email..."
           ></input>
         </label>
       </p>
@@ -46,6 +48,7 @@ const Form = (props) => {
             required="required"
             value={newMessage}
             name="message"
+            placeholder="Write your message here..."
           ></textarea>
         </label>
       </p>
