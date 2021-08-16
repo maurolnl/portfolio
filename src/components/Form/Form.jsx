@@ -28,7 +28,8 @@ const Form = ({sendEmail}) => {
     const target = event.target;
 
     setLoading(true);
-    sendEmail(target)
+    sendEmail(target);
+    setLoading(false);
 
     setNewName("");
     setNewEmail("");
