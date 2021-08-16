@@ -6,61 +6,29 @@ import ResultMessage from "../ResultMessage/ResultMessage";
 import {sendEmail} from '../../services/SendEmail'
 
 const ContactMe = () => {
-  const [newName, setNewName] = useState("");
-  const [newEmail, setNewEmail] = useState("");
-  const [newMessage, setNewMessage] = useState("");
-  const [sended, setSended] = useState(1);
-  const [loading, setLoading] = useState(false);
+  const notSended = 1
+  const sendedSuccessfully = 2
+  const errorSending = 3
 
-  const handleNameChange = (event) => {
-    const name = event.target.value;
-    setNewName(name);
-  };
+  const [sended, setSended] = useState(notSended);
 
-  const handleEmailChange = (event) => {
-    const email = event.target.value;
-    setNewEmail(email);
-  };
-
-  const handleMessageChange = (event) => {
-    const message = event.target.value;
-    setNewMessage(message);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const target = event.target;
-
-    setLoading(true);
+  const handleEmailSend = (target) => {
     sendEmail(target).then(result => {
       if(result.text === "OK") {
-        setSended(2);
-        setLoading(false);
+        setSended(sendedSuccessfully);
       } else {
-        setSended(3);
-        setLoading(false);
+        setSended(errorSending);
       }
     });
-
-    setNewName("");
-    setNewEmail("");
-    setNewMessage("");
   };
 
   return (
     <section className={`${styles.container_sm} ${global_styles.container}`}>
       <h1 className={global_styles.title}>Contact Me</h1>
       {
-        sended === 1 ? 
+        sended === notSended ? 
           <Form
-            handleSubmit={handleSubmit}
-            handleEmailChange={handleEmailChange}
-            handleNameChange={handleNameChange}
-            handleMessageChange={handleMessageChange}
-            newName={newName}
-            newEmail={newEmail}
-            newMessage={newMessage}
-            loading={loading}
+            sendEmail={handleEmailSend}
           />
         : <ResultMessage sended={sended}/> 
       }

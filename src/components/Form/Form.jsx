@@ -1,17 +1,40 @@
 import global_styles from "../../styles/Home.module.css";
 import styles from "../Contact/Contact.module.css";
+import { useState } from "react";
 
-const Form = (props) => {
-  const {
-    handleSubmit,
-    handleEmailChange,
-    handleNameChange, 
-    handleMessageChange,
-    newName,
-    newEmail,
-    newMessage,
-    loading
-  } = props
+const Form = ({sendEmail}) => {
+  const [newName, setNewName] = useState("");
+  const [newEmail, setNewEmail] = useState("");
+  const [newMessage, setNewMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleNameChange = (event) => {
+    const name = event.target.value;
+    setNewName(name);
+  };
+
+  const handleEmailChange = (event) => {
+    const email = event.target.value;
+    setNewEmail(email);
+  };
+
+  const handleMessageChange = (event) => {
+    const message = event.target.value;
+    setNewMessage(message);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const target = event.target;
+
+    setLoading(true);
+    sendEmail(target)
+
+    setNewName("");
+    setNewEmail("");
+    setNewMessage("");
+  };
+
   return (
     <form className={styles.contact_form} onSubmit={handleSubmit} autoComplete="off">
       <p>
