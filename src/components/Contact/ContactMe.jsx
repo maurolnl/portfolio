@@ -6,18 +6,18 @@ import ResultMessage from "../ResultMessage/ResultMessage";
 import {sendEmail} from '../../services/SendEmail'
 
 const ContactMe = () => {
-  const notSended = 1
-  const sendedSuccessfully = 2
-  const errorSending = 3
+  const NOT_SENDED = 1
+  const SENDED_SUCCESSFULLY = 2
+  const ERROR_SENDING = 3
 
-  const [sended, setSended] = useState(notSended);
+  const [sended, setSended] = useState(NOT_SENDED);
 
   const handleEmailSend = (target) => {
     sendEmail(target).then(result => {
       if(result.text === "OK") {
-        setSended(sendedSuccessfully);
+        setSended(SENDED_SUCCESSFULLY);
       } else {
-        setSended(errorSending);
+        setSended(ERROR_SENDING);
       }
     });
   };
@@ -26,7 +26,7 @@ const ContactMe = () => {
     <section className={`${styles.container_sm} ${global_styles.container}`}>
       <h1 className={global_styles.title}>Contact Me</h1>
       {
-        sended === notSended ? 
+        sended === NOT_SENDED ? 
           <Form
             sendEmail={handleEmailSend}
           />
