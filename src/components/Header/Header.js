@@ -18,11 +18,15 @@ const Header = () => {
       <div className={global_styles.container}>
         <nav className={styles.nav_bar}>
           <div className={styles.logo_container}>
-            <Link href="/" passHref>
-              <a>
-                <Logo strokeColor={logoColor} strokeWidth={"5"} isAnimated={true}/> 
-              </a>
-            </Link>
+            {
+              router.pathname !== "/" ? 
+                <Link href="/" passHref>
+                  <a>
+                    <Logo strokeColor={logoColor} strokeWidth={"5"} isAnimated={true}/> 
+                  </a>
+                </Link>
+                : ""
+            }
           </div>
           <div className={styles.nav_bar_item_container}>
             <div
