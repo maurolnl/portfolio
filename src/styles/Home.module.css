@@ -80,7 +80,7 @@
 .inside_link:hover {
   color: var(--color-primary);
   background-color: var(--color-secondary);
-  transition: all .5s;
+  transition: all .4s;
 }
 
 @keyframes fadeIn {
@@ -103,16 +103,14 @@
   transition: all .4s;
 }
 
-.linkFooter {
-  color: var(--color-secondary);
-  border-bottom: 3px solid transparent;
-  font-weight: 500;
-  font-size:1.1rem;
+.asd {
+  color: var(--color-neutral-white);
 }
 
-.linkFooter:hover {
-  border-color:var(--color-secondary);
-  transition: all .8s;
+.link_footer {
+  color: var(--color-neutral-white);
+  font-weight: 500;
+  font-size:1.1rem;
 }
 
 .wordAccent{
