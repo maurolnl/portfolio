@@ -1,31 +1,20 @@
 import global_styles from "../../styles/Home.module.css";
 import styles from "./Main.module.css";
+import { useTranslation } from 'react-i18next'
+import LinkStyled from '../LinkStyled/LinkStyled'
 
 const Main = () => {
+  const { t } = useTranslation('landingPage')
   return (
     <main className={`${styles.container_sm} ${global_styles.container}`}>
-      <h1 className={global_styles.title}>About Me</h1>
+      <h1 className={global_styles.title}>{t('aboutme-title')}</h1>
       <p className={global_styles.paragraph}>
-        I&apos;m a passionate about software development, looking to learn and
-        improve constantly. I have experience working at{" "}
-        <a
-          href="https://www.raona.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`${global_styles.link} `}
-        >
-          Raona
-        </a>
-        {", "}
-        developing web applications both on Frontend in React and on the Backend
-        with C#. I&apos;m now searching for a team to grow with and continue
-        advancing my professional career.
+        {t('aboutme-paragraph-1')} 
+        <LinkStyled text="Raona" link="https://www.raona.com/"/>
+        {t('aboutme-paragraph-1-2')} 
       </p>
       <p className={global_styles.paragraph}>
-        On my personal side, I really like photography and I tend to go for a
-        walks on my free time trying to take advantage of it to take some
-        photos. Besides that I love music and I actually play the guitar, I
-        honestly can&apos;t code without music playing in the background.
+        {t('aboutme-paragraph-2')} 
       </p>
     </main>
   );

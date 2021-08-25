@@ -1,12 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero/Hero'
 import Divider from '../components/Divider/Divider'
 import Main from '../components/Main/Main'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Home() {
-  
+  const router = useRouter()
   return (
     <>
       <Head>
@@ -23,3 +26,9 @@ export default function Home() {
     </>
   )
 }
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common','landingPage']),
+  },
+})

@@ -1,6 +1,7 @@
 import Layout from "../components/Layout"
 import ContactMe from '../components/Contact/ContactMe'
 import Head from 'next/head'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Contact = ({children}) => {
   return (
@@ -19,3 +20,9 @@ const Contact = ({children}) => {
 } 
 
 export default Contact
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common','contact']),
+  },
+})

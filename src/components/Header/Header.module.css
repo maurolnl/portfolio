@@ -67,8 +67,22 @@
   stroke-width: 5px;
 }
 
+.lang_icon {
+  display: flex;
+  align-items: center;
+}
 
-@media screen and (max-width: 445px) {
+.lang {
+  border-bottom: 3px solid transparent;
+}
+
+.lang:hover {
+  color: var(--color-neutral-white);
+  background-color: var(--color-secondary);
+  transition: all .4s;
+}
+
+@media screen and (max-width: 479px) {
   .resume {
     display: none
   }
@@ -86,7 +100,7 @@
   }
 }
 
-@media screen and (min-width: 446px) {
+@media screen and (min-width: 480px) {
   .resume_container {
     display: none
   } 

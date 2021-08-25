@@ -1,12 +1,17 @@
 import global_styles from "../../styles/Home.module.css";
 import styles from "../Contact/Contact.module.css";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Form = ({sendEmail}) => {
   const [newName, setNewName] = useState("");
   const [newEmail, setNewEmail] = useState("");
   const [newMessage, setNewMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const { t } = useTranslation('contact');
+
+  const btnMessage = t('contact-btn')
+  const btnMessageLoading = t('contact-btn-loading');
 
   const handleNameChange = (event) => {
     const name = event.target.value;
@@ -40,46 +45,46 @@ const Form = ({sendEmail}) => {
     <form className={styles.contact_form} onSubmit={handleSubmit} autoComplete="off">
       <p>
         <label className={global_styles.contact_label}>
-          Name:
+          {t('contact-name')}:
           <input
             onChange={handleNameChange}
             type="text"
             required="required"
             value={newName}
             name="Name"
-            placeholder="Your Name..."
+            placeholder={t('contact-name-ph')}
           ></input>
         </label>
       </p>
       <p>
         <label className={global_styles.contact_label}>
-          Email:
+          {t('contact-email')}:
           <input
             onChange={handleEmailChange}
             type="text"
             required="required"
             value={newEmail}
             name="Email"
-            placeholder="Your Email..."
+            placeholder={t('contact-email-ph')}
           ></input>
         </label>
       </p>
       <p>
         <label className={global_styles.contact_label}>
-          Message:
+          {t('contact-msg')}:
           <textarea
             onChange={handleMessageChange}
             required="required"
             value={newMessage}
             name="message"
-            placeholder="Write your message here..."
+            placeholder={t('contact-msg-ph')}
           ></textarea>
         </label>
       </p>
       <p className={styles.send_button}>
         <button className={global_styles.button_confirm}>
           {
-            loading === false ? "Send" : "Sending…"
+            loading === false ? btnMessage : btnMessageLoading
           }
         </button>
       </p>

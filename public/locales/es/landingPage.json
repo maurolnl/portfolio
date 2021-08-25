@@ -1,0 +1,12 @@
+{
+  "hero-greeting": "Hola, Mundo!",
+  "hero-im": "Soy, ",
+  "hero-name": "Mauro Leonel Quiroga",
+  "hero-description-1": "Un apasionado por el Desarrollo Web,",
+  "hero-description-2": "trabajando principalmente en ",
+  "hero-description-accent": "Front End",
+  "aboutme-title": "Sobre Mi",
+  "aboutme-paragraph-1": "Soy un apasionado por el desarrollo del software, buscando aprender y mejorar constantemente. Tengo experiencia trabajando en ",
+  "aboutme-paragraph-1-2": " desarrollando aplicaciones web tanto en el Front End con React, como en el Back End con C#. Actualmente estoy terminando mi carrera de Ingeniería en Informática en la UNSL  y buscando un equipo con el cual crecer y seguir avanzando mi carrera profesional.",
+  "aboutme-paragraph-2": "Con respecto a mi lado más personal, me gusta mucho la fotografía y aprovecho el tiempo libre de mis caminatas para tomar algunas fotos. Por otro lado, amo la música tanto que no puedo codear sin música de fondo, además toco la guitarra y me gusta la producción musical."
+}

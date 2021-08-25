@@ -2,11 +2,16 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import global_styles from "../../styles/Home.module.css";
 import { useRouter } from "next/router";
+import { useTranslation } from 'react-i18next'
 import  Logo  from '../Logo/Logo'
+import {IoLanguageOutline} from 'react-icons/io5'
 
 const Header = () => {
   const router = useRouter();
+  const {t} = useTranslation('common')
   const logoColor = "#5F9EA0"
+  const enResume = "/cv/Mauro_Leonel_Quiroga_CV_English.pdf"
+  const esResume = "/cv/Mauro_Leonel_Quiroga_CV_Spanish.pdf"
 
   return (
     <header className={styles.header}>
@@ -28,7 +33,7 @@ const Header = () => {
               }
             >
               <Link href="/Projects" className={styles.link}>
-                <a>Projects</a>
+                <a>{t('navbar-project')}</a>
               </Link>
             </div>
             <div
@@ -39,20 +44,22 @@ const Header = () => {
               }
             >
               <Link href="/Contact">
-                <a>Contact</a>
+                <a>{t('navbar-contact')}</a>
               </Link>
             </div>
             <div className={`${styles.nav_bar_item} ${styles.resume}`}>
-              <Link href="/cv/Mauro_Leonel_Quiroga_CV_English.pdf">
+              <Link 
+                href={router.locale === 'en' ? enResume : esResume}
+              >
                 <a target="_blank" rel="nooper noreferrer">
-                  Resume
+                  {t('navbar-resume')}
                 </a>
               </Link>
             </div>
             <div
               className={`${styles.nav_bar_item} ${styles.resume_container}`}
             >
-              <Link href="/cv/Mauro_Leonel_Quiroga_CV_English.pdf">
+              <Link href={router.locale === 'en' ? enResume : esResume}>
                 <a target="_blank" rel="nooper noreferrer">
                   <svg
                     viewBox="0 0 132 168"
@@ -67,6 +74,14 @@ const Header = () => {
                   </svg>
                 </a>
               </Link>
+            </div>
+            <div className={`${styles.lang} ${styles.nav_bar_item}`}>
+            <Link 
+              href={`${router.pathname}`}
+              locale= {router.locale === 'en' ? 'es' : 'en'}
+            >
+              <a className={styles.lang_icon}><IoLanguageOutline/> {t('navbar-lan')} </a>
+            </Link>
             </div>
           </div>
         </nav>

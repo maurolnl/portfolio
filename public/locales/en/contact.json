@@ -1,0 +1,11 @@
+{
+  "contact-title": "Contact Me",
+  "contact-name": "Name",
+  "contact-name-ph": "Your Name...",
+  "contact-email": "Email",
+  "contact-email-ph": "Your Email...",
+  "contact-msg": "Message",
+  "contact-msg-ph": "Write your message here...",
+  "contact-btn": "Send",
+  "contact-btn-loading":"Senging..."
+}

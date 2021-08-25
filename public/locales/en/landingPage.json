@@ -1,0 +1,12 @@
+{
+  "hero-greeting": "Hello, World!",
+  "hero-im": "I'm, ",
+  "hero-name": "Mauro Leonel Quiroga",
+  "hero-description-1": "A passionate Web Developer,",
+  "hero-description-2": "working mostly on ",
+  "hero-description-accent": "Front End",
+  "aboutme-title": "About Me",
+  "aboutme-paragraph-1": "I'm a passionate about software development, looking to learn and improve constantly. I have experience working at ",
+  "aboutme-paragraph-1-2": " developing web applications both on Front End in React and on the Back End with C#. I'm now about to end my software engeneering degree at UNSL and searching for a team to grow with and continue advancing my professional career.",
+  "aboutme-paragraph-2": "On my personal side, I really like photography and I tend to go for a walks on my free time trying to take advantage of it to take some photos. Besides that I love music so much that I can't even code without music playing in the background, I also play the guitar and I like music production."
+}

@@ -1,6 +1,7 @@
 import Layout from "../components/Layout"
 import Project from '../components/Project/Project'
 import Head from 'next/head'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Projects = ({children}) => {
   return (
@@ -19,3 +20,10 @@ const Projects = ({children}) => {
 } 
 
 export default Projects
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common','projects']),
+  },
+})
+

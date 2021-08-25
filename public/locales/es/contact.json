@@ -1,0 +1,11 @@
+{
+  "contact-title": "Contáctame",
+  "contact-name": "Nombre",
+  "contact-name-ph": "Su Nombre...",
+  "contact-email": "Email",
+  "contact-email-ph": "Su Email...",
+  "contact-msg": "Mensaje",
+  "contact-msg-ph": "Escriba aquí su mensaje...",
+  "contact-btn": "Enviar",
+  "contact-btn-loading":"Enviando..."
+}

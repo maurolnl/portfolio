@@ -3,13 +3,16 @@ import global_styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import todoListPic from "../../../public/projects/todoList.jpg";
 import CoronaVirus from "../../../public/projects/coronaVirus.png";
+import { useTranslation } from 'react-i18next'
+import LinkStyled from "../LinkStyled/LinkStyled";
 
 const Project = () => {
+  const { t } = useTranslation('projects')
   return (
     <section
       className={`${styles.container_projects} ${global_styles.container}`}
     >
-      <h1 className={global_styles.title}>Some Learning Projects</h1>
+      <h1 className={global_styles.title}>{t('project-title-front')}</h1>
       {
         <>
           <div className={global_styles.gridRows}>
@@ -18,74 +21,27 @@ const Project = () => {
               alt="Todo"
               className={styles.projectImage}
             ></Image>
-            <h1 className={styles.articleTitle}>Corona Virus Tracker</h1>
+            <h1 className={styles.articleTitle}>{t('project-1front-title')}</h1>
             <p className={global_styles.paragraph_sm}>
-              This project was built to learn about pagination, in this case
-              with a very light weight library named{" "}
-              <a
-                href="https://github.com/molefrog/wouter#readme"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${global_styles.link} `}
-              >
-                wouter
-              </a>{" "}
-              which is a very good alternative to{" "}
-              <a
-                href="https://reactrouter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${global_styles.link} `}
-              >
-                react router
-              </a>
-              {". "}One of my main problems was the{" "}
-              <span className={styles.descriptionAccent}>data input</span>, in a
-              first approach I found an API called{" "}
-              <a
-                href="https://covid19api.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${global_styles.link} `}
-              >
-                covid19api
-              </a>{" "}
-              which had an acceptable documentation, but it lacked information
-              about the vaccinations. So with this in mind, I searched the data
-              input of the google covid information tool and I found{" "}
-              <a
-                href="https://ourworldindata.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${global_styles.link} `}
-              >
-                our world in data
-              </a>
-              {", "}
-              in this case I had all the information that I needed (and much
-              much more), but the problem was that this data was in raw format,
-              so I had to fetch this data{" "}
-              <span className={styles.descriptionAccent}>carefully</span> to not
-              ruin the app{" "}
-              <span className={styles.descriptionAccent}>performance</span>.
-              {" Visit the "}
-              <a
-                href="https://covid.maurolquiroga.site/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${global_styles.link} `}
-              >
-                site
-              </a>
-              {" or just view the code "}
-              <a
-                href="https://github.com/maurolnl/corona-tracker"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${global_styles.link} `}
-              >
-                here
-              </a>{"."}
+              {t('project-1front-paragraph-1')}
+              <LinkStyled text="wouter" link="https://github.com/molefrog/wouter#readme"/>
+              {t('project-1front-paragraph-2')} 
+              <LinkStyled text="react router" link="https://reactrouter.com/"/>
+              {t('project-1front-paragraph-3')}
+              <span className={styles.descriptionAccent}>{t('project-1accent-1')}</span>
+              {t('project-1front-paragraph-4')}
+              <LinkStyled text="covid19api" link="https://covid19api.com/"/>
+              {t('project-1front-paragraph-5')}
+              <LinkStyled text="our world in data" link="https://ourworldindata.org/"/>
+              {t('project-1front-paragraph-6')} 
+              <span className={styles.descriptionAccent}>{t('project-1accent-2')}</span> 
+              {t('project-1front-paragraph-7')}
+              <span className={styles.descriptionAccent}>{t('project-1accent-3')}</span>
+              {t('project-1front-end')}
+              <LinkStyled text={t('project-site')} link="https://covid.maurolquiroga.site/"/>
+              {t('project-1front-end-1')} 
+              <LinkStyled text={t('project-here')} link="https://github.com/maurolnl/corona-tracker"/>
+              {"."}
             </p>
           </div>
           <div className={global_styles.gridRows}>
@@ -96,58 +52,23 @@ const Project = () => {
             ></Image>
             <h1 className={styles.articleTitle}>Yet another TODO list</h1>
             <p className={global_styles.paragraph_sm}>
-              Well, this project is the prove that you{" "}
+              {t('project-2front-paragraph-1')} 
               <span className={styles.descriptionAccent}>
-                don&apos;t need to build huge and complex stuff to learn the
-                basics of technologies
+                {t('project-2accent-1')} 
               </span>
-              , with this todo list I was able to learn the basics of react in a
-              very first iteration of it, then I took it back and decided to re
-              do it in{" "}
-              <a
-                href="https://www.typescriptlang.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${global_styles.link} `}
-              >
-                Typescript
-              </a>{" "}
-              and add{" "}
-              <a
-                href="https://www.typescriptlang.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${global_styles.link} `}
-              >
-                Bootstrap
-              </a>{" "}
-              for better styling, again for learning purposes. I ended up
-              struggling a bit at the beggining, because all of the types stuff
-              and my development performance decreased a lot, but when I was
-              more into the project I realized how worth was to implement it in
-              typescript. At the end my development performance increased a lot
-              because of{" "}
+              {t('project-2front-paragraph-2')} 
+              <LinkStyled text="TypeScript" link="https://www.typescriptlang.org/"/>
+              {t('project-2front-paragraph-3')} 
+              <LinkStyled text="Bootstrap" link="https://getbootstrap.com/"/>
+              {t('project-2front-paragraph-4')} 
               <span className={styles.descriptionAccent}>
-                all the benefits and how convenient are the types
+                {t('project-2accent-2')} 
               </span>
-              .{" Visit the "}
-              <a
-                href="https://tasks.maurolquiroga.site/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${global_styles.link} `}
-              >
-                site
-              </a>
-              {" or just view the code "}
-              <a
-                href="https://github.com/maurolnl/react-tasks"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${global_styles.link} `}
-              >
-                here
-              </a>{"."}
+              {t('project-1front-end')}
+              <LinkStyled text={t('project-site')} link="https://covid.maurolquiroga.site/"/>
+              {t('project-1front-end-1')} 
+              <LinkStyled text={t('project-here')} link="https://github.com/maurolnl/corona-tracker"/>
+              {"."}
             </p>
           </div>
         </>
