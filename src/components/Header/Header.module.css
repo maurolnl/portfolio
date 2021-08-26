@@ -56,10 +56,15 @@
 }
 
 .resume_container {
-  width: 1.5rem;
-  height: 2.3rem;
+  display: flex;
   cursor: pointer;
   border: none;
+}
+
+.resume_link {
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 .resume_container:hover svg path{
@@ -87,7 +92,10 @@
     display: none
   }
   .nav_bar_item{
-    margin-left: .8em;
+    margin-left: .5em;
+  }
+  .nav_bar_item_active{
+    margin-left: .5em;
   }
   .nav_bar{
     justify-content: flex-end;
@@ -96,7 +104,7 @@
     width:2.3rem;
     height:3.4rem;
     cursor: pointer;
-    margin-right: 1.2rem;
+    margin-right: .2rem;
   }
 }
 
@@ -106,7 +114,7 @@
   } 
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
   .nav_bar_item{
     font-size: .85em;
   }

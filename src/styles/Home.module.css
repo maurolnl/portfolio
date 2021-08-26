@@ -103,10 +103,6 @@
   transition: all .4s;
 }
 
-.asd {
-  color: var(--color-neutral-white);
-}
-
 .link_footer {
   color: var(--color-neutral-white);
   font-weight: 500;
@@ -122,4 +118,9 @@
 
 .wordAccent::selection{
   color: var(--color-primaryAccent);
+}
+@media screen and (max-width: 375px) {
+  .container{
+    padding: 0 .5rem;
+  }
 }
