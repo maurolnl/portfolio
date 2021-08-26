@@ -121,6 +121,12 @@
 }
 @media screen and (max-width: 375px) {
   .container{
-    padding: 0 .5rem;
+    padding: 0 1.2rem;
+  }
+}
+
+@media screen and (max-height: 756px) {
+  .container{
+    line-height: 5vh;
   }
 }

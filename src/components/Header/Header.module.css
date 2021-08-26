@@ -104,7 +104,7 @@
     width:2.3rem;
     height:3.4rem;
     cursor: pointer;
-    margin-right: .2rem;
+    margin-right: 0 auto;
   }
 }
 
@@ -124,6 +124,23 @@
   .resume_container{
     width: 1.3rem;
     height: 2rem;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  .nav_bar_item{
+    font-size: .7em;
+  }
+  .nav_bar_item_active{
+    font-size: .7em;
+  }
+  .resume_container{
+    width: 1.3rem;
+    height: 2rem;
+  }
+  .logo_container{
+    width: 1.8rem;
+    height: 2.8rem;
   }
 }
 

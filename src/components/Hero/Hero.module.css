@@ -14,8 +14,6 @@
   stroke-dashoffset: 1494;
 }
 
-
-
 .hero_content {
   max-width: 550px;
   display: flex;
@@ -94,6 +92,15 @@
   .hero_container {
     margin-right:2%;
     margin-left: 2%;
+  }
+}
+
+@media screen and (max-height: 756px) {
+  .landing_section{
+    line-height: 5vh;
+  }
+  .hero_title_hello{
+    line-height: 6vh;
   }
 }
 
