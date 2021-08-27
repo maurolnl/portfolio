@@ -10,6 +10,14 @@ import LinkStyled from "../LinkStyled/LinkStyled";
 import VisitCodeMsg from "../VisitCodeMsg/VisitCodeMsg";
 
 const Project = () => {
+  const linkRepoCovid = "https://github.com/maurolnl/corona-tracker"
+  const linkRepoTODO = "https://github.com/maurolnl/react-tasks"
+  const linkRepoPhotoUpload = "https://github.com/maurolnl/photo-gallery"
+  const linkRepoAPIs = "https://github.com/maurolnl?tab=repositories"
+
+  const linkWebCovid = "https://covid.maurolquiroga.site/"
+  const linkWebTODO = "https://tasks.maurolquiroga.site/"
+
   const { t } = useTranslation('projects')
   return (
     <section
@@ -39,7 +47,7 @@ const Project = () => {
             <span className={styles.descriptionAccent}>{t('project-1accent-2')}</span> 
             {t('project-1front-paragraph-7')}
             <span className={styles.descriptionAccent}>{t('project-1accent-3')}</span>
-            <VisitCodeMsg/>  
+            <VisitCodeMsg isFullMsg={true} linkRepo={linkRepoCovid} linkWeb={linkWebCovid}/>  
             {"."}
           </p>
         </div>
@@ -63,7 +71,7 @@ const Project = () => {
             <span className={styles.descriptionAccent}>
               {t('project-2accent-2')} 
             </span>
-            <VisitCodeMsg/>  
+            <VisitCodeMsg isFullMsg={true} linkRepo={linkRepoTODO} linkWeb={linkWebTODO}/>  
             {"."}
           </p>
         </div>
@@ -86,6 +94,7 @@ const Project = () => {
               <LinkStyled text="Mongoose" link="https://mongoosejs.com/"/>
               {t('project-1back-paragraph-3')}
               <LinkStyled text="TypeScript" link="https://www.typescriptlang.org/"/>
+              <VisitCodeMsg isFullMsg={false} linkRepo={linkRepoPhotoUpload}/>  
             </p>
           </div>
         </div>
@@ -105,6 +114,7 @@ const Project = () => {
               <LinkStyled text="Springboot" link="https://spring.io/projects/spring-boot"/>
               {t('project-2back-paragraph-3')}
               <LinkStyled text="Guava Cache" link="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/Cache.html"/>{"."}
+              <VisitCodeMsg isFullMsg={false} linkRepo={linkRepoAPIs}/>  
             </p>
           </div>
         </div>
