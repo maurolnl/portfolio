@@ -21,5 +21,11 @@
   "project-2front-paragraph-2": ", with this todo list I was able to learn the basics of React in a very first iteration of it, then I took it back and decided to re do it in ",
   "project-2front-paragraph-3": " and add ",
   "project-2front-paragraph-4": " for better styling, again for learning purposes. I ended up struggling a bit at the beggining, because all of the types stuff and my development performance decreased a lot, but when I was more into the project I realized how worth was to implement it in TypeScript. At the end my development experience improved a lot because of ",
-  "project-2accent-2": "all the benefits and how convenient are the types"
+  "project-2accent-2": "all the benefits and how convenient are the types",
+  "project-1back-paragraph-1": "This is a REST API for storing files locally. I developed this trying to learn and practice about ",
+  "project-1back-paragraph-2": " and I used technologies like ",
+  "project-1back-paragraph-3": " and ",
+  "project-2back-paragraph-1": "These REST APIs are microservices to make money transfers between users. I developed this as a practice for a workshop from the UNSL together with ",
+  "project-2back-paragraph-2": ". With this I learned the basics of REST and microservices, for doing this i used ",
+  "project-2back-paragraph-3": " and Google library called "
 }

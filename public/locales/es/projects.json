@@ -21,5 +21,11 @@
   "project-2front-paragraph-2": ", con esta primera iteración de la lista de quehaceres pude aprender las bases de React, luego de un tiempo lo retomé y decidí rehacerlo en ",
   "project-2front-paragraph-3": " y agregar ",
   "project-2front-paragraph-4": " para mejorar los estilos, nuevamente con el propósito de aprender. Terminé renegando un poco al principio, por toda la complejidad que agrega el tipado y mi rendimiento al programar disminuyó bastante. Luego ya más avanzado en el proyecto, pude ver lo mucho que valió la pena implementarlo en TypeScript, al final mi experiencia al desarrollar mejoró mucho debido a ",
-  "project-2accent-2": "todos los beneficios y comodidades que provee el tipado"
+  "project-2accent-2": "todos los beneficios y comodidades que provee el tipado",
+  "project-1back-paragraph-1": "Esta es una REST API para almacenar archivos localmente. Esto lo desarrollé con la intención de practicar y aprender ",
+  "project-1back-paragraph-2": " y utilice tecnologías como ",
+  "project-1back-paragraph-3": " y ",
+  "project-2back-paragraph-1": "Estas APIs, que sirven para realizar transferencias de dinero entre usuarios, las desarrolle como práctica de un taller de la UNSL junto con ",
+  "project-2back-paragraph-2": ". Con esto aprendí las bases de REST y Microservicios, para esto utilicé ",
+  "project-2back-paragraph-3": " y una librería de Google llamada "
 }

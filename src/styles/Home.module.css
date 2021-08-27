@@ -18,6 +18,7 @@
   margin-top: 1.5rem;
   margin-bottom: 1vh;
   text-align: left;
+  padding-bottom: 4rem;
 }
 
 .container{
@@ -32,10 +33,16 @@
   width: 43rem;
 }
 
-.gridRows {
+.grid_row {
  display: flex;
  flex-direction: column;
- padding-top: 4rem;
+}
+
+.grid_column {
+  display:grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  padding-bottom: 2rem;
 }
 
 .skills_section {
@@ -122,6 +129,9 @@
 @media screen and (max-width: 375px) {
   .container{
     padding: 0 1.2rem;
+  }
+  .grid_column{
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 }
 

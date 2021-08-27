@@ -12,9 +12,21 @@
   height: 200px;
 }
 
+.back_project_paragraph{
+  padding-top: 1rem;
+}
+
 .articleTitle {
   margin: 0;
   padding-top: 1rem;
+}
+
+.articleTitleRow{
+  padding-top:0;
+}
+
+.back_project_description{
+  padding-right: 4rem;
 }
 
 .descriptionAccent{
