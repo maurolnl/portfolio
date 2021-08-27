@@ -94,7 +94,7 @@ const Project = () => {
               <LinkStyled text="Mongoose" link="https://mongoosejs.com/"/>
               {t('project-1back-paragraph-3')}
               <LinkStyled text="TypeScript" link="https://www.typescriptlang.org/"/>
-              <VisitCodeMsg isFullMsg={false} linkRepo={linkRepoPhotoUpload}/>  
+              <VisitCodeMsg isFullMsg={false} linkRepo={linkRepoPhotoUpload}/>. 
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ const Project = () => {
               <LinkStyled text="Springboot" link="https://spring.io/projects/spring-boot"/>
               {t('project-2back-paragraph-3')}
               <LinkStyled text="Guava Cache" link="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/Cache.html"/>{"."}
-              <VisitCodeMsg isFullMsg={false} linkRepo={linkRepoAPIs}/>  
+              <VisitCodeMsg isFullMsg={false} linkRepo={linkRepoAPIs}/>.
             </p>
           </div>
         </div>
