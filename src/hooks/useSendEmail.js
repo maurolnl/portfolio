@@ -2,18 +2,25 @@ import {useState, useEffect} from 'react'
 import { sendEmail } from '../services/SendEmail';
 
 export default function useSendEmail(target) {
+  const NOT_SENDED = 1
+  const SENDED_SUCCESSFULLY = 2
+  const ERROR_SENDING = 3
+
   const [loading, setLoading] = useState(false);
-  const [response, setResponse] = useState("")
+  const [sended, setSended] = useState(NOT_SENDED);
 
   useEffect(() => {
     if(target != null) {
       setLoading(true);
       sendEmail(target).then(result => {
-        setResponse(result.text);
         setLoading(false);
+        setSended(SENDED_SUCCESSFULLY)
+      }).catch(err => {
+        setSended(ERROR_SENDING)
+        console.log(err);
       })
     }
   }, [target])
 
-  return {loading, response}
+  return {loading, sended}
 }
