@@ -3,11 +3,10 @@ import styles from "../Contact/Contact.module.css";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const Form = ({sendEmail}) => {
+const Form = ({sendEmail, loading}) => {
   const [newName, setNewName] = useState("");
   const [newEmail, setNewEmail] = useState("");
   const [newMessage, setNewMessage] = useState("");
-  const [loading, setLoading] = useState(false);
   const { t } = useTranslation('contact');
 
   const btnMessage = t('contact-btn')
@@ -32,9 +31,7 @@ const Form = ({sendEmail}) => {
     event.preventDefault();
     const target = event.target;
 
-    setLoading(true);
     sendEmail(target);
-    setLoading(false);
 
     setNewName("");
     setNewEmail("");
